@@ -1,0 +1,60 @@
+1. Introduce yourself / Tell me about yourself!
+
+ans:first of all, thank you for selecting me for further rounds and giving me a
+chance to introduce myself.Hi, I am Niraj Kumar from Motihari, Bihar but currently
+live in Patna.I completed my graduation stream of arts in 2019 at Brabu university. 
+In college, I met a friend and saw his project. Then I got interested in this field.
+After some time I joined Masai where I spent 1000+ hours in coding and 600+ hours in
+problem-solving.If I talk about my family, a total of 6 members are in my family, 
+my father Mr. Raju prasad is a farmer, my mom miss mina Devi is a homemaker and I 
+have two younger brothers and a grandma.My hobby is travelling.
+
+
+2. What are your greatest strengths and your weaknesses?
+Ans:
+ I am a very optimistic type of person. And I believe that even a negative situation 
+ can be easily handled with a positive approach.I am a proactive person.And I take responsibility for the work.
+
+
+3. What are your career Objectives?/Where do you see yourself 5 years from now?
+Ans:After 5 years, I want to see myself in a respectable position and I want to become
+ a part of the success of your company. And also I want to be in that position where I'll 
+ grow myself with more skill sets and experience. It will help the company to grow further.
+
+4. Why should we hire you? / Why do you think you are eligible for this job?
+
+Ans:As per mentioned in the job description I have relevant skills.
+I have also worked tirelessly on my communication abilities and teamwork skills,
+ which I will put to use in my future career.If I channel them further, they will 
+ bring fruitful results to me and also to your organisation.
+
+
+5. What is your greatest personal/professional achievement so far?
+
+Ans:My greatest achievement was completing my Fullstack web development course in 8 months.
+ I did not know anything about this field, i was an art student. When I joined Masai, 
+ This taught me relevant Skills , prioritised my time, built great habits and stayed focused on my goals. 
+ I feel that what I learned is going to give me a big advantage in my career now.
+
+6. Tell me about a team project you were involved in. What was your role, and what was the outcome?
+
+Ans:In Masai, we have a constructed week at the end of each unit. where we get the project to clone the website.
+ Recently I worked on a project called Tripoto. Tripoto is India's largest travelling community website. 
+ In my team there are 4 members. We use tech-stack node js, MongoDB , react , chakra ui, and CSS.
+I created  the backend for this project and also the Singapore page which is responsive.
+
+
+
+
+7. What are your salary expectations?
+Ans : I cleared all interview rounds with good reviews and I also have relevant skills which are mentioned in the job description. 
+so I expect it according to market standards for this role.
+
+
+8. Do you have any questions for us?
+Ans: I am curious to know what the upcoming goal is.
+    What is the scope for this role in your organisation?
+
+
+9.is there any location preference ?
+Ans  no, I don’t have any location preference. I love travelling to other parts of the country. so I am flexible..
