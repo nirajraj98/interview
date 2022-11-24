@@ -2,7 +2,7 @@
 
 ans:first of all, thank you for selecting me for further rounds and giving me a
 chance to introduce myself.Hi, I am Niraj Kumar from Motihari, Bihar but currently
-live in Patna.I completed my graduation stream of arts in 2019 at Brabu university. 
+live in Patna.I completed my graduation in stream of arts in 2019 at Brabu university. 
 In college, I met a friend and saw his project. Then I got interested in this field.
 After some time I joined Masai where I spent 1000+ hours in coding and 600+ hours in
 problem-solving.If I talk about my family, a total of 6 members are in my family, 
@@ -14,6 +14,9 @@ have two younger brothers and a grandma.My hobby is travelling.
 Ans:
  I am a very optimistic type of person. And I believe that even a negative situation 
  can be easily handled with a positive approach.I am a proactive person.And I take responsibility for the work.
+
+ My weakness is that I spend too much time on work. so I face some health issues but I am trying to be fit and 
+ also joined the gym.
 
 
 3. What are your career Objectives?/Where do you see yourself 5 years from now?
@@ -39,8 +42,8 @@ Ans:My greatest achievement was completing my Fullstack web development course i
 6. Tell me about a team project you were involved in. What was your role, and what was the outcome?
 
 Ans:In Masai, we have a constructed week at the end of each unit. where we get the project to clone the website.
- Recently I worked on a project called Tripoto. Tripoto is India's largest travelling community website. 
- In my team there are 4 members. We use tech-stack node js, MongoDB , react , chakra ui, and CSS.
+Recently I worked on a project called Tripoto. Tripoto is India's largest travelling community website. 
+In my team there are 4 members. We use tech-stack node js, MongoDB , react , chakra ui, and CSS.
 I created  the backend for this project and also the Singapore page which is responsive.
 
 
@@ -62,4 +65,13 @@ Ans  no, I don’t have any location preference. I love travelling to other part
 10.Why do you want to work for our company?
 
  I am a fresher and I know that your company's environment is amazing in this field. 
- I am very curious to work in that kind of environment and I can enhance my skills and knowledge.
+ I am very curious to work in that kind of environment and enhance my skills and knowledge.
+11.who is your role modal ?
+
+12.if you are ceo of company what will you do
+
+13.what you know about job description
+
+14.what do you know about our company.
+
+15.

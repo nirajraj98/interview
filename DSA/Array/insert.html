@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let data=[3,6,8,95,4]
+    let neel=78
+    let pos=1
+    for(let i=data.length-1;i>=0;i--){
+        if(i>=pos){
+            data[i+1]=data[i]
+            if(i==pos){
+                data[i]=neel;
+            }
+        }
+     console.log(data)
+    }
+
+//data.splice(1,0,2000)
+//pos 1-kitne ele del ement 0-kya insert 2000
+
+</script>
