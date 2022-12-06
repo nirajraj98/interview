@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let A=[1,2,4,5,6,6,1,2]
+    let B=[2,1,4,10,6,9,7,8]
+    
+    
+    var count = 0;
+    let size=A.length
+    var left = 0;
+    var right = size-1;
+      while(left<size && right>=0){
+          if(A[left]==B[right]){
+              count++
+              left++
+              right--
+          }
+          if(A[left]>B[right]){
+              right--
+          }
+          
+          if(A[left]<B[right]){
+              left++
+          }
+      }
+      console.log(count)
+
+
+// let count=0;
+// let l=0
+// let r=size-1
+// while(l<size && r>=0){
+//     if(ar1[l]==ar2[r]){
+//         count++
+//         r--
+//         l++
+//     }
+//     if(ar1[l]>ar2[r]){
+//         r--
+//     }
+//     if(ar1[l]<ar2[r]){
+//         l++
+//     }
+// }
+// console.log(count)
+</script>

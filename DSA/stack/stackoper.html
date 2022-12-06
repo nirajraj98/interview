@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+let arr=[]
+let l=arr.length;
+let max=5
+function push(ele){
+  if(l>=max){
+  alert("stack pverflow")
+  }else{
+    arr[l]=ele
+    l++
+  }
+}
+function pop(){
+  if(l>0){
+    l--
+    arr.length=l
+  }else{
+    alert("stack is emty")
+  }
+}
+
+
+
+// function push(ele){
+//   if(l>=max){
+//     alert("stk is overflow")
+//   }else{
+//     arr[l]=ele
+//     l++
+//   }
+// }
+// function pop(){
+//   if(l>0){
+//     l--
+//     arr.length=l
+//   }else{
+//     alert("stk is empty")
+//   }
+// }
+
+// console.log()
+
+
+//   let arr = [];
+//   let l = arr.length;
+//   let max = 5;
+
+//   function push(ele) {
+//     if (l >= max) {
+//       alert("you cant add this number" + ele);
+//     } else {
+//       arr[l] = ele;
+//       l++;
+//     }
+//   } 
+// function pop() {
+//     if(l>0){
+
+//         l--;
+//         arr.length = l;
+//     }else{
+//         alert("stk is already empty")
+//     }
+//   }
+  push(2);
+  push(10);
+  push(3);
+  push(5);
+  pop();
+console.log(arr);
+</script>

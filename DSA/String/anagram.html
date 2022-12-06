@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+</body>
+</html>
+<script>
+        function checkAnagram(str1, str2) {
+        let ObjStr1 = {};
+        if (str1.length !== str2.length) {
+          return false;
+        }
+        for (ch of str1) {
+         ObjStr1[ch] = (ObjStr1[ch] || 0) + 1;
+        }
+       for (ch of str2) {
+          if (!ObjStr1[ch]) {
+            return false;
+          }
+         console.log(ObjStr1[ch]--);
+        }
+        return true
+      }
+
+      console.warn(checkAnagram("anil", "nila"));
+</script>

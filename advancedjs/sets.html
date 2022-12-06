@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+   //set is a collection of unique value
+   //we can do crud easily compare to arr
+   //in javascript arr is collection of value
+
+   let data=new Set()
+   data.add(10)
+   data.add("hi")
+   data.add({name:"niraj"})
+   data.delete("hi")
+   data.clear()
+
+
+   data.forEach((item)=>{
+    console.log(item)
+
+   })
+   for(x of data){
+    console.log(x)
+   }
+//convert arr to set
+let arr=[1,2,3,4]
+arr=new Set(arr)
+console.log(arr)
+//set to arr
+ let dq=new Set([2,4,6,7,8])
+ //destruct
+ dq=[...dq]
+ console.log(dq)
+
+
+
+</script>

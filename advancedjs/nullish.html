@@ -11,17 +11,13 @@
 </body>
 </html>
 <script>
-    let arr=[1,3,2,5,4,9,7,6,8]
-    for(let i=0;i<arr.length;i++){
-        let min=i
-        for(let j=i+1;j<arr.length;j++){
-            if(arr[j]<arr[i]){
-                min=j
-            }
+    let users={
+        student:{
+            name:'',
+            age:0,
         }
-        let temp =arr[min]
-        arr[min]=arr[i]
-        arr[i]=temp
     }
-    console.log(arr)
+    console.log(users.student.name ?? "unknown")
+    console.log(users.student.age ?? 21)
+    // when we need y=to check null and undefined use nullish operator
 </script>

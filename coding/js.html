@@ -1,0 +1,37 @@
+<script>
+let data=[2,3,4,5,6,7];
+//fix arr length
+data.length=3;
+//sum
+let sum=data.reduce((x,y)=>x+y);
+//remove duplicate with set
+let unique=new Set(data);
+//destruct in array 
+console.log([...unique]);
+
+//comma operator
+let x=1
+x=(y++,y)
+console.log(x);
+
+//swap through destructring
+let a=20;
+let b=20
+[a,b]=[b,a]
+console.log(a,y);
+
+
+
+<script/>
+
+
+// <script>
+//     const obj1 = { x : 1, y : 2 };
+// const obj2 = { z : 3 };
+
+// // add members obj1 and obj2  to obj3
+// const obj3 = { ...obj2};
+
+// console.log(obj3);
+    
+// </script>

@@ -1,0 +1,4 @@
+1.Find all substrings of string.
+2.You are given a strings, you have to find thecountof all such substrings which 
+start and ends with the same character.
+3.

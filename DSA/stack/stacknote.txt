@@ -1,0 +1,2 @@
+//liner type data structure
+//operation push and pop

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr1=[1,2,3,46,7]
+    let arr2=[1,4,7,8,9,0,43,3]
+    let size=arr1.length
+    let niraj=arr2.length
+        var count="";
+          var i = 0;
+          var j = 0;
+          while(i<size && j<niraj){
+         if (arr1[i] == arr2[j]){
+            count =count+arr1[i]+" ";
+            i++;
+            j++;
+            }
+           if (arr1[i] < arr2[j]) {
+              i++;
+          }
+           if (arr1[i] > arr2[j]) {
+              j++;
+          }
+     }
+      if(count===""){
+          console.log("-1")
+      }
+      else{
+      console.log(count);
+      }
+</script>

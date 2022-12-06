@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //    1. what is object ?
+  //   collection of similar data and similar functionality.
+  //   store data in key and value pair.
+  //   store different type of data
+
+  //    2.how to make object
+
+  //    3.function inside a object
+  //    4.add property in object
+  //    5.update property in object
+  //    6.delete property in object
+  //    7.tricks with object
+  //    8.short hand property in object
+  //    9check objects values
+  //    10.loop with object
+  //    11.sum of object value
+
+  //    1. what is object ?
+  //   collection of similar data and similar functionality.
+  //   store data in key and value pair.
+  //   store different type of data
+
+  //    2.how to make object
+ let key="address"
+ let phone=12446878
+ let email="@gmail.com"
+  let user = {
+    name:"nirah",
+    age:25,
+    ['pin code']:123456,
+    isDeveloper:function(){
+        return this.city
+    },
+    inner:{
+        name:'innerman'
+    },
+    [key]:"noida, up ,india",
+    //short hand property
+    phone,
+    email
+  };
+  
+ user.name="aniket"
+ delete user.inner
+ user.city="mumbai"
+ user['pin code']=123456
+
+ //value in object
+ console.log("age" in user)
+ //loop of obj
+ for(item in user){
+    console.log(item)
+    console.log(user.item)
+ }
+ console.log(user['pin code'])
+ console.log(user)
+ 
+ //sum of obj 
+ let emp={
+    niraj:400,
+    vivek:100,
+    aniket:100
+ }
+let s=0
+ for(item in emp){
+ s+=emp[item]
+ }
+ console.log(s)
+</script>

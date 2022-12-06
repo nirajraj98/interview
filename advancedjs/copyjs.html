@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // copy object
+  // 1.By memory refrence
+  // 2.by value
+  // when we assign a variable then we copy of variable .if we copy do
+  // copy of obj and arr in that condition we do copy memory locations
+
+  //shallow copy
+  let obj = {
+    name: "Peter",
+  };
+  // let user=Object.assign({},obj)   //1 st type shallow copy
+  let user = { ...obj }; // 2nd type shallow copy
+
+  user.name = "bruce";
+
+  console.log(obj); //output :>peter
+  console.log(user); //output :>bruce
+
+  //deep copy
+  //need of deep .if you have nested obj in that situation if you
+  //   change value of nested obj you value will be change so we need deep
+  //copy
+  // first convert in string then convert in obj.
+  //stntax:let user=JSON.parse(JSON.stringify(obj));
+  //disadvantage:>if you have functionand date in obj we cant show
+  //in deep copy
+  //solution in cdn ,react loadsh afetr that your function will show
+
+
+  let obj1 = {
+    name: "peter",
+    address: {
+      city: "Patna",
+      state: "Bihar",
+    },
+  };
+  let user = JSON.parse(JSON.stringify(obj1));
+  user.address.city = "motihari";
+
+  console.log(obj); //city output=patna
+
+  console.log(user); //city output=motihari
+</script>

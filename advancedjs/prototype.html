@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+//custom prototype
+
+Object.prototype.myAppData="this is sample project"
+Object.prototype.myAppData=function(){
+    return "function of custom prtotype"
+}
+
+String.prototype.othersData="this is astring custom prototype"
+String.prototype.otherslength=function(){
+    return this.length+3
+}
+//end
+let user={
+    getFullName:function(){
+        return this.name +" "+this.last
+    },
+
+    getAge:function(){
+        let age=new Date().getFullYear()-this.birth
+        return age
+    }
+}
+
+
+let student={
+    name:"Niraj",
+    last:"Kumar",
+    birth:1997
+}
+
+let teacher={
+    name:"Naal",
+    last:"pata na",
+    birth:1980
+}
+
+student.__proto__=user
+
+teacher.__proto__=user
+
+console.log(student.getFullName())
+console.log(teacher.getAge())
+
+</script>

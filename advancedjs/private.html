@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private properties and function</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  class BankAccount {
+    name = "nirak";
+    #pin = 11223;
+
+    getName() {
+      return this.name;
+    }
+    #getifsc() {
+      return "173788";
+    }
+    getdetails() {
+      return {
+        name: this.name,
+        pin: this.pin,
+        ifsc: this.#getifsc(),
+      };
+    }
+  }
+
+  const detaild = new BankAccount();
+  console.log(details.getdetails());
+</script>
