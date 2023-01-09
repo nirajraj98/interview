@@ -1,14 +1,14 @@
 1. Introduce yourself / Tell me about yourself!
 
 ans:first of all, thank you for selecting me for further rounds and giving me a
-chance to introduce myself.Hi, I am Niraj Kumar from Motihari, Bihar but currently
-live in Patna.I completed my graduation in stream of arts in 2019 at Brabu university. 
-In college, I met a friend and saw his project. Then I got interested in this field.
-After some time I joined Masai where I spent 1000+ hours in coding and 600+ hours in
-problem-solving.If I talk about my family, a total of 6 members are in my family, 
-my father Mr. Raju prasad is a farmer, my mom miss mina Devi is a homemaker and I 
-have two younger brothers and a grandma.My hobby is travelling.
-
+chance to introduce myself.Hi, I am Neeraj from motihari Bihar but currently leave in Patna. 
+I completed my graduation in 2019 in the stream of arts at brabu university Muzaffarpur.
+after that, I took admission to a master's in public administration in Dec 2019 at ignou.
+ but after that pandemic happened. and all session was late and also no confirmation of the exam date.
+  At that time I met a school friend who was in IT field. and I saw some projects of him. 
+  then got interested in this field. after that, I tried to acquire some knowledge myself. 
+  but after some time I realized this is not enough for me .and I need guidance. 
+then I joined Masai in Feb 2022 where is spent 1000+ hours in coding and 600+ hours in problem-solving skills.
 
 2. What are your greatest strengths and your weaknesses?
 Ans:
@@ -47,12 +47,9 @@ In my team there are 4 members. We use tech-stack node js, MongoDB , react , cha
 I created  the backend for this project and also the Singapore page which is responsive.
 
 
-
-
 7. What are your salary expectations?
 Ans : I cleared all interview rounds with good reviews and I also have relevant skills which are mentioned in the job description. 
 so I expect it according to market standards for this role.
-
 
 8. Do you have any questions for us?
 Ans: I am curious to know what the upcoming goal is.
@@ -73,5 +70,6 @@ Ans  no, I don’t have any location preference. I love travelling to other part
 13.what you know about job description
 
 14.what do you know about our company.
+meesho is a online site for shopping.
 
 15.

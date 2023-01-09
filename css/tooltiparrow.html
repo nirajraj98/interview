@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltipb {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipb .tooltiptextb {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  /* /left */
+  /* top: -5px;
+  right: 110%; */
+  /* /right */
+  /* top: -5px;
+  left: 110%; */
+  /* top */
+  /* bottom: 150%;
+  left: 50%; */
+  /* /bottom */
+  top: 150%;
+  left: 50%;
+  /* //margin left is apply for only top and bottom */
+  margin-left: -60px;
+
+  
+}
+.tooltipb .tooltiptextb::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.tooltipb:hover .tooltiptextb {
+  visibility: visible;
+}
+/* //tooltip top */
+.tooltiptt {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltiptt .tooltiptextt {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+   /* top */
+  bottom: 150%;
+  left: 50%;
+  
+  /* //margin left is apply for only top and bottom */
+  margin-left: -60px;
+
+  
+}
+.tooltiptt .tooltiptextt::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.tooltiptt:hover .tooltiptextt {
+  visibility: visible;
+}
+
+.tooltiptt .tooltiptextt::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* //end */
+/* //left  start*/
+.tooltipll {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipll .tooltiptextll {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  /* /left */
+  top: -5px;
+  right: 110%;
+  /* /right */
+  /* top: -5px;
+  left: 110%; */
+}
+.tooltipll .tooltiptextll::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+} 
+.tooltipll:hover .tooltiptextll {
+  visibility: visible;
+}
+
+/* //end */
+/* /right */
+.tooltipr {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipr .tooltiptextr {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+
+  /* /right */
+  top: -5px;
+  left: 110%;
+}
+/* /right arrow */
+.tooltipr .tooltiptextr::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltipr:hover .tooltiptextr {
+  visibility: visible;
+}
+#tool{
+    width:80%;
+    display:flex;
+    gap:30px;
+    justify-content: center;
+}
+</style>
+<br style="text-align:center;">
+
+<div id="tool">
+
+<div class="tooltipb">Bottom
+  <span class="tooltiptextb">Bottom</span>
+</div>
+</br>
+</br>
+<div class="tooltiptt">Top
+    <span class="tooltiptextt">Top</span>
+  </div>
+</br>
+</br>
+  <div class="tooltipll">Left
+    <span class="tooltiptextll">Left</span>
+  </div>
+</br>
+</br>
+<div class="tooltipr">Right
+    <span class="tooltiptextr">Right</span>
+  </div>
+</div>
+</body>
+</html>

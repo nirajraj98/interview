@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+   
+let data=[-8, 2 ,3 ,-6 ,10]
+let s=data.length
+  let i = 0;
+  let j = 0;
+  let z = 0;
+  let k=2
+
+  let cal = [];
+
+  let output = [];
+  while (j < s) {
+    if (data[j] < 0) {
+      cal.push(data[j]);
+    }
+    if (j - i + 1 < k) {
+      j++;
+    } else if (j - i + 1 == k) {
+      if (cal.length == 0) {
+        output.push(0);
+      } else {
+        output.push(cal[0]);
+        if (data[i] < 0) {
+        console.log(data[i])
+          cal.shift();
+        }
+      }
+      i++;
+      j++;
+    }
+  }
+  console.log(output.join(" "))
+
+
+
+</script>

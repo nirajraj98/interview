@@ -1,0 +1,47 @@
+javascript is a client side language.
+
+js=>parser(syntax line by line) =>(AST)=>conversion machine=>code Run
+
+//execution context and execution stack
+javascript ek global execution context create karta hai before is=ts 
+starts to excute ant code.
+
+=>agar hamare pass three function ho toh
+  step
+  =>fun1
+  =>fun2
+  =>fun3
+  =>global
+=>agar first global and step by step function, after execute all 
+function came back to global
+
+///1.execution context
+
+1 .CREATION PHASE
+1.variable objects are created
+ =>first check kiya jata hai kaha function and a property is created
+ in the variable object. which is pointing to that function.
+
+ =>jab variable declare  kiya jata hai toh uska value undefined 
+ set kar liya jata hai.
+
+ =>jab function me argument pass kiya jata hai toh toh ek argument 
+ object create ho jata hai.
+
+///. Hosisting in javascript
+ A.Function hoisting
+  =>function ko pahle call karke aur use declare kar sakte hai.
+  =>agar function ko () me pass kare toh reffernce error aayega
+  =>agar function ko variable me assign kare toh aur pahle call
+  kare toh reffernce error ho jayega.
+  =>es6 me hoisting work nahi karega
+  =>
+B.Variable hoisting
+  =>
+
+
+2.execution phase
+
+
+
+

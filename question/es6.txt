@@ -1,0 +1,472 @@
+- **var let const**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31691/OS3pwaOHNVxRexMYzCLnMxVKrLlvnOoVgypN6baB.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31691/OS3pwaOHNVxRexMYzCLnMxVKrLlvnOoVgypN6baB.mp4)
+    
+    1. let/const
+    2. Tempelate Literals
+    3. default values
+    
+    # `let/const`
+    
+    To understand var,let and const,
+    
+    We need to understand the following terms properly:
+    
+    - variable declerations vs initialisation
+    - hoisting
+    - scope (function scope)
+    
+    ### declaration vs initialisation:
+    
+    initialises a new identifier
+    
+    ```
+    var name
+    // declaration
+    
+    console.log(name)
+    
+    name = 'masai'
+    // this is an initialisation
+    
+    ```
+    
+    ### Hoisting:
+    
+    ```
+    Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+    
+    ```
+    
+    ```
+    x = 5; // Assign 5 to x
+    
+    var x
+    
+    ```
+    
+    ### Scope:
+    
+    ```
+    If a variable is declaration is inside a function, then it is said that the variable is defined with function local scope in that function.
+    So this variable is accesible in that function, and any of its nested functions.
+    Otherwise it has a global scope ie. they are members of the global object.
+    
+    ```
+    
+    ```
+    function getName(){
+        var name = 'masai'
+        return name
+    }
+    getName()
+    console.log(name)
+    
+    ```
+    
+    `Example of scope`: [Codepen Example](https://codepen.io/albseb511/pen/gOYLobG?editors=0011)
+    
+    So we have understood declaration vs initialisation, hoisting, function local scope.
+    
+    - let follows a block scope. var doesnt follow block scope.
+    - If var is used inside a for loop, it is still accessible outside it.
+    - let throws a Reference error when accessing the variable outside of a for loop or any block scope (written inside `{ ... }` )
+    - let also throws an error when you try to access a variable before its declared
+    - let trows an error when you redeclare a variable
+    - const is the same as let, except it needs a value to be assigned while declaring, and does not allow reassigning values to a variable.
+    
+    ### Creating global object property
+    
+    At the top level, let, unlike var, does not create a property on the global object:
+    
+    var foo = "Foo";  // globally scoped
+    let bar = "Bar"; // globally scoped
+    
+    console.log(window.foo); // Foo
+    console.log(window.bar); // undefined
+    
+    Summary
+    
+    `var vs. let vs. const`
+    
+    `var:`
+    
+    ```
+    var is function scoped
+    variables will be undefined when accessing it before it's declared
+    
+    ```
+    
+    `let:`
+    
+    ```
+    let is block scoped
+    ReferenceError when accessing a let variable before it's declared
+    Syntax errror when redeclaring a let variable again
+    
+    ```
+    
+    `const:`
+    
+    ```
+    const is also block scoped
+    ReferenceError when accessing a const variable before it's declared
+    Syntax errror when redeclaring a const variable again
+    Type errror when reassinging a const  variable again
+    
+    ```
+    
+    [Further Reading](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
+    
+- [ ]  **spread operator**
+- [ ]  **rest operator**
+- [ ]  **Arrow function**
+- **Destructuring**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31694/XLFvTP0eF4MXsKKLDQlYUPh0uOosCqW3rbFMaHmJ.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31694/XLFvTP0eF4MXsKKLDQlYUPh0uOosCqW3rbFMaHmJ.mp4)
+    
+    ## `Object & Array destructuring`
+    
+    We know that we can:
+    
+    - add a single property,
+    - extract a property
+    - add multiple properties
+    
+    to an object.
+    
+    ```
+    var person = {}
+    person.name = 'karthik';
+    person.id = 'sm_090';
+    person.location = 'India';
+    // creating property one by one
+    
+    const name = person.name
+    const id = person.id
+    // extracting property one by one
+    
+    // creating multiple properties together by using object literal notation
+    var person = {
+        name:"karthik",
+        id:"sm_090",
+        location:"India"
+    }
+    
+    var name = person.name
+    var id = person.id
+    var location = person.location
+    
+    ```
+    
+    `Destructuring` allows us to `extract multiple properties` from an object
+    
+    ```
+    
+    const { name, id, location } = person;
+    // The code can now be written in a better way now
+    
+    ```
+    
+    - You can also destructure from return values from other functions.
+    - If you have an api call and it returns a large object.
+    
+    ```
+    
+    function getData(){
+        let count = 5
+        let url = '127.0.0.1:8000'
+        let obj = {
+            count,
+            url,
+        }
+        return
+    }
+    
+    var { count, url } = getData()
+    
+    ```
+    
+    `Array Destructuring`
+    
+    We can do the same with arrays as well
+    
+    ```
+    
+    // array destructuring
+    
+    // standard way
+    const arr = ['MASAI','INDIA','EDTECH']
+    var name = arr[0]
+    var location = arr[1]
+    var desc = arr[2]
+    
+    // es6
+    var [name,location,desc] = arr
+    console.log(name,location,desc)
+    
+    // using destructuring in split
+    name = 'albert sebastian'
+    const [fname, lname] = name.split(' ')
+    console.log(fname, lname)
+    
+    ```
+    
+    Renaming field names:
+    
+    ```
+    
+    // use const
+    var person = {
+        f:'albert',
+        l:'sebastian',
+        i:'albseb511'
+    }
+    
+    var {f:fname,l:lname,i:id} = person
+    
+    ```
+    
+    Implementing in function arguments:
+    
+    ```
+    
+    function fetchData(baseUrl,query,maxResults,orderby){
+    
+    }
+    
+    fetchData(' <https://www.googleapis.com/youtube/v3/search','masai',10,'date>')
+    
+    // This can cause issues because we need to pass the exact order, and can make the function complicated
+    // Also this function doesnt handle default values
+    
+    ```
+    
+    We can use object destructuring:
+    
+    ```
+    function fetchData({baseUrl,query,maxResults,orderby}){
+    
+    }
+    
+    // we can change the order
+    fetchData({
+        baseUrl:'<https://www.googleapis.com/youtube/v3/search>',
+        orderby:'date',
+        maxResults:10,
+        query:'masai'
+    
+    })
+    
+    ```
+    
+    combining with default values:
+    
+    ```
+    function fetchData({baseUrl,query='',maxResults=null,orderby=null}){
+    
+    }
+    
+    // pass only some variables
+    fetchData({
+        baseUrl:'<https://www.googleapis.com/youtube/v3/search>',
+        query:'masai'
+    
+    })
+    
+    // combine with default parameters
+    
+    ```
+    
+- **Default Params**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31693/4Kgjxw7lkyu8oE8D2iphXeAPWDZhBrgWTx5z9lle.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31693/4Kgjxw7lkyu8oE8D2iphXeAPWDZhBrgWTx5z9lle.mp4)
+    
+    # `Default values`
+    
+    when writing a function, If the values arent given any values, you need to assign default values for arguments that weren’t passed to the function when it was invoked.
+    
+    Lets take an example of sum marks
+    
+    ```
+    function sum (maths, english, science){
+        return maths + english + science
+    }
+    
+    total = sum(50,80,80)
+    // 210
+    
+    ```
+    
+    This code would break if we do not pass any one of the marks
+    Normally if we had to give default values we would do the following
+    
+    ```
+    function sum(maths, english, science){
+        maths = maths || 0
+        english = english || 0
+        science = science || 0
+    
+        return math + english + science
+    }
+    
+    sum(80,80)
+    // 160
+    
+    ```
+    
+    with default values in ES6 we can write in a much simpler manner
+    
+    ```
+    
+    function sum(maths=0, english=0, science=0){
+        return maths + english + science
+    }
+    
+    ```
+    
+- **Template Literals**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31692/ADaM9CV1Cf3qfgmNLEI9XfbEYWHgwTYEIC78pLmt.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31692/ADaM9CV1Cf3qfgmNLEI9XfbEYWHgwTYEIC78pLmt.mp4)
+    
+    # `Template literals`
+    
+    Template literals are string literals that allow you to embed expressions and values within strings.
+    
+    Template literals are enclosed by the back-tick ( ``) or grave accent
+    character instead of double or single quotes.
+    
+    **Example:**
+    
+    ```
+    
+    let x = "Hello world!" //This is a regular string literal
+    let y = `Hello World!` //This is a template literal
+    
+    ```
+    
+    Template strings allow you to:
+    
+    - write expressions within it
+    - multiline strings
+    
+    **Some Cool features of template literals:**
+    
+    Makes it really easy to write Multi-line strings:
+    
+    ```
+    `This is the first line
+    and this is the second line.`
+    
+    ```
+    
+    **Output:**
+    
+    ```
+    'This is the first line\\nand this is the second line.'
+    
+    ```
+    
+    Notice how the `\\n` newline character is automatically inserted.
+    
+    The key feature is expression interpolation or the ability to embed expressions within strings.
+    
+    ```
+    var a = 5;
+    var b = 10;
+    console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+    
+    ```
+    
+    This saves time on writing and managing a lot of `+` operators within strings.
+    
+    You can also call functions within these expressions.
+    
+    There are a few more cool features that you can read about on MDN [Template Literals MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+    
+- [ ]  **Optional Chaining**
+- [ ]  **Classes**
+- [ ]  **Map**
+- [ ]  **Sets**
+- **Promises, async await**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31695/teTFUkcmBOFe41e1r7H78a6D8qHx7wBHa5wzOh8S.mov](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/31695/teTFUkcmBOFe41e1r7H78a6D8qHx7wBHa5wzOh8S.mov)
+    
+    ## `async await`
+    
+    The purpose of async/await is to simplify using promises synchronously, and to perform some behavior on a group of Promises
+    
+    An async function can contain an await expression that pauses the execution of the async function to wait for the passed Promise's resolution, then resumes the async function's execution and evaluates as the resolved value.
+    
+    The await keyword is only valid inside async functions. If you use it outside of an async function's body, you will get a SyntaxError.
+    
+    Syntax:
+    
+    ```
+    async function name([param[, param[, ... param]]]) {
+       statements
+    }
+    
+    ```
+    
+    Example:
+    
+    ```
+    function resolveAfter2Seconds() {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve('resolved');
+        }, 2000);
+      });
+    }
+    
+    async function asyncCall() {
+      console.log('calling');
+      var result = await resolveAfter2Seconds();
+      console.log(result);
+      // expected output: 'resolved'
+    }
+    
+    asyncCall()
+    .then( ... )
+    .catch( ... )
+    
+    ```
+    
+    [async-await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+    
+    It is important to do error handling within the async function.
+    
+    Generally with synchronous code we use something called try catch finally.
+    
+    But the above fails if it is in asynchronous land, but with async await,
+    
+    we can use try catch to handle errors in even asynchronous code.
+    
+    ```
+    
+    async function asyncCall() {
+      try {
+          console.log('calling');
+          var result = await resolveAfter2Seconds();
+          console.log(result);
+          // expected output: 'resolved'
+      }
+      catch ( err ) {
+          handleError( err )
+    
+      }
+    
+    }
+    
+    ```
+    
+- [ ]  
+- [ ]  **import export**
+
+**Advanced**
+
+- [ ]  Iterators, Generators, yield
+- [ ]  Proxy
+- [ ]  Decorator
+- [ ]  Symbols

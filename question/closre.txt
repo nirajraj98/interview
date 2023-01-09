@@ -1,0 +1,17 @@
+- **What Are Closures?**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27123/OBu74afHyfgLDrD135xD0PiiI7stDu0GUYNSmH1a.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27123/OBu74afHyfgLDrD135xD0PiiI7stDu0GUYNSmH1a.mp4)
+    
+- **What Is Debouncing?**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27124/Lz7L1s5SeDBMIvrtk6wSlbaNA5o003OrfeIqjg2J.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27124/Lz7L1s5SeDBMIvrtk6wSlbaNA5o003OrfeIqjg2J.mp4)
+    
+- **What Is Throttling?**
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27125/zRRKPNZBnGtg4tW5DWNOjf7jLqVs9cWU4bDT0TDV.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27125/zRRKPNZBnGtg4tW5DWNOjf7jLqVs9cWU4bDT0TDV.mp4)
+    
+- How to create a toggler with closure?
+    
+    [https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27126/torc9Ok0QJAALYj41yn809EyIHaM7h2cIoYFq5gO.mp4](https://masai-course.s3.ap-south-1.amazonaws.com/material/videos/27126/torc9Ok0QJAALYj41yn809EyIHaM7h2cIoYFq5gO.mp4)
+    
+- setTimeout closure scope example ( Amazon interview question )
